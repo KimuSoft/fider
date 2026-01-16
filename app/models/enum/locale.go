@@ -189,6 +189,15 @@ var (
 		IsRTL:             false,
 	}
 
+	LocaleKorean = Locale{
+	    	Code:              "ko",                 // Locale code
+    		Name:              "Korean",             // Display name
+    		MessageFormatCode: "ko",                 // Pluralization library culture code
+    		PostgresConfig:    "simple",             // PostgreSQL text search config
+    		LinguaLanguage:    lingua.Korean,        // Lingua-go language enum
+    		IsRTL:             false,                // Right-to-left text direction
+	}
+
 	// AllLocales contains all supported locales
 	AllLocales = []Locale{
 		LocaleEnglish,
@@ -208,6 +217,7 @@ var (
 		LocaleArabic,
 		LocaleChineseCN,
 		LocalePersian,
+		LocaleKorean,
 	}
 )
 
